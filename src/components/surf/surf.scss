@@ -1,7 +1,6 @@
 @import "../../index";
 
 .serf {
-  padding: 160px 0 120px;
   background-image: url("../../images/surf-bg.png");
   background-position: right 225px;
   background-repeat: no-repeat;
@@ -159,7 +158,7 @@
   line-height: 23px;
 }
 
-.slider-dots__content-name{
+.slider-dots__content-name {
   font-weight: 300;
   font-size: 10px;
   line-height: 12px;
@@ -204,11 +203,12 @@
 .slider-dots__content {
   display: none;
   background: rgba(#0F1010, .7);
-  border-radius:7px ;
+  border-radius: 7px;
   position: absolute;
   bottom: 35px;
   transform: translateX(-50%);
-  &::before{
+
+  &::before {
     content: '';
     position: absolute;
     width: 0;
@@ -230,9 +230,11 @@
 .slider-dot1 {
   top: 335px;
   left: 0;
+
   .slider-dots__content {
     transform: translateX(-1px);
-    &::before{
+
+    &::before {
       left: 0;
     }
   }
@@ -287,9 +289,11 @@
 .slider-dot8 {
   top: 470px;
   left: 20px;
+
   .slider-dots__content {
     transform: translateX(-261px);
-    &::before{
+
+    &::before {
       left: auto;
       right: 0;
     }
