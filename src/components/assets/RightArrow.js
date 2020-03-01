@@ -1,6 +1,6 @@
 import React from "react";
-import "./header.scss";
-import arrowsRight from "../../images/arrowsRight.svg";
+import "../header/header.scss";
+import arrowsRight from "../../images/arrows-right.svg";
 
 
 export const RightArrow = (props) => {

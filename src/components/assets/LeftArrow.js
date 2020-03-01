@@ -1,6 +1,6 @@
 import React from "react";
-import "./header.scss";
-import arrowsLeft from "../../images/arrowsLeft.svg";
+import "../header/header.scss";
+import arrowsLeft from "../../images/arrows-left.svg";
 
 
 export const LeftArrow = (props) => {
