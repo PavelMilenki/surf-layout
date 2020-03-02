@@ -1,5 +1,5 @@
-import React from "react";
-import "./header.scss";
+import React from 'react';
+import '../../app.scss'
 
 export const Dot = ({number,name}) => {
     return (

@@ -1,5 +1,5 @@
 import React from "react";
-import './header.scss'
+import '../../app.scss'
 import logo from '../../images/logo.svg'
 import navIcon1 from '../../images/nav-ico-1.svg'
 import navIcon2 from '../../images/nav-ico-2.svg'

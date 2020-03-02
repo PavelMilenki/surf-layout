@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
-import './header.scss'
+import '../../app.scss'
 import {Aside} from "./Aside";
 import {Map} from "./Map";
 import arrowsDown from '../../images/arrows-down.svg'

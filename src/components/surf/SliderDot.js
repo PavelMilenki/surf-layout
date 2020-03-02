@@ -1,5 +1,5 @@
 import React from "react";
-import './surf.scss'
+import '../../app.scss'
 import arrowsRight from "../../images/arrows-right.svg";
 import surfIcon from "../../images/surf-icon.svg";
 import waterIcon from "../../images/water-icon.svg";

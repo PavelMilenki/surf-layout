@@ -1,10 +1,15 @@
 import React from "react";
-import './footer.scss'
+import '../../app.scss'
 
 export const Footer = () => {
     return (
-       <footer>
-
-       </footer>
+        <footer className={'footer'}>
+            <a className={'btn'} href="#">
+                go<span>Surf</span>
+            </a>
+        <div className={'footer__copy'}>
+            © Go-Surf 2020. All Rights Reserved.
+        </div>
+        </footer>
     )
 };

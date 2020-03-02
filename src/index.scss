@@ -173,10 +173,22 @@ ul, li {
   }
 }
 
-.serf, .travel {
+.serf, .holder {
   padding: 160px 0 120px;
 }
 
-.travel {
+.holder {
   padding-bottom: 265px;
+  margin-bottom: 35px;
+}
+
+.star-list {
+  li {
+    display: inline-block;
+
+    & + li {
+      margin-left: -25px;
+    }
+
+  }
 }

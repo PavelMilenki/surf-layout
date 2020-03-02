@@ -1,5 +1,5 @@
 import React from "react";
-import './travel.scss'
+import '../../app.scss'
 import sliderBg from "../../images/travel-slider-bg.png";
 import virginAir from "../../images/virgin.png";
 import aviaLogo from "../../images/avia-logo.svg";
@@ -8,10 +8,10 @@ import {InfoItem} from "./InfoItem";
 
 export const TravelSlider = () => {
     return (
-        <div className={'travel__slider-item travel-slider'}>
-            <div className={'travel-slider__head'}
+        <div className={'holder__slider-item travel-slider'}>
+            <div className={'holder-slider__head'}
                  style={{backgroundImage: `url(${sliderBg})`}}>
-                <div className={'travel-slider__subtitle'}>
+                <div className={'holder-slider__subtitle'}>
                     <div className={'subtitle'}>
                         <div className={'headLine-left'}>Shore</div>
                         <div className={'subtitle__head'}>
@@ -20,7 +20,7 @@ export const TravelSlider = () => {
                     </div>
                 </div>
             </div>
-            <div className={'travel-slider__descr'}
+            <div className={'holder-slider__descr'}
                  style={{backgroundImage: `url(${virginAir})`}}>
                 <div className={'descr'}>
                     <div className="headline-right">Airline</div>
@@ -28,7 +28,7 @@ export const TravelSlider = () => {
                         <img src={aviaLogo} alt={'logo'}/></div>
                 </div>
             </div>
-            <div className="travel-slider__info">
+            <div className="holder-slider__info">
                 <InfoItem subTitle={'Destination'}
                           infoTitle={'Queensland'}
                           infoTitleSecond={'Australia'}/>
@@ -41,7 +41,7 @@ export const TravelSlider = () => {
                           infoTitle={'$1,976 USD'}
                           supTitle={'Round Trip'}/>
             </div>
-            <div className={'travel-slider__btn'}>
+            <div className={'holder-slider__btn'}>
                 <a className={'btn'} href="#">
                     Book <span>Flight</span>
                 </a>

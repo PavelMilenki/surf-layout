@@ -1,5 +1,5 @@
 import React from "react";
-import "../header/header.scss";
+import '../../app.scss'
 import arrowsLeft from "../../images/arrows-left.svg";
 
 

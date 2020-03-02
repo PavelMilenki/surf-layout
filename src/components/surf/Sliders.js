@@ -1,5 +1,5 @@
 import React from "react";
-import './surf.scss'
+import '../../app.scss'
 
 export const Sliders = ({slider, title, location, country}) => {
 

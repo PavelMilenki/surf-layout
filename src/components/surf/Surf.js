@@ -1,11 +1,10 @@
 import React, {useEffect, useRef, useState} from "react";
-import './surf.scss'
+import '../../app.scss'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import {SliderDot} from "./SliderDot";
 import {LeftArrow} from "../assets/LeftArrow";
 import {RightArrow} from "../assets/RightArrow";
-
 import {Sliders} from "./Sliders";
 import {Title} from "../assets/Title";
 

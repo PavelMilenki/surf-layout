@@ -1,5 +1,5 @@
 import React from "react";
-import './travel.scss'
+import '../../app.scss'
 import {Title} from "../assets/Title";
 import {TravelSlider} from "./TravelSlider";
 import Slider from "react-slick";
@@ -9,10 +9,10 @@ import {RightArrow} from "../assets/RightArrow";
 
 export const Travel = () => {
     return (
-        <section className={'travel'}>
+        <section className={'holder'}>
             <div className={'container'}>
                 <Title title={'travel'}/>
-                <div className={'travel__slider'}>
+                <div className={'holder__slider'}>
                     <Slider dots={false}
                             infinite={true}
                             fade={true}
