@@ -800,7 +800,19 @@
   background-color: #FFFFFF;
   cursor: pointer;
 
-  &.active {
+  &.active1 {
+    .circle-row {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+
+  &.active2 {
+    .circle-row {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+
+  &.active3 {
     .circle-row {
       transform: translate(-50%, -50%) rotate(0deg);
     }
@@ -821,7 +833,15 @@
   }
 }
 
-.surfboard-box__circle.active + .surfboard-box__content {
+.surfboard-box__circle.active1 + .surfboard-box__content {
+  display: block;
+}
+
+.surfboard-box__circle.active2 + .surfboard-box__content {
+  display: block;
+}
+
+.surfboard-box__circle.active3 + .surfboard-box__content {
   display: block;
 }
 
@@ -864,7 +884,6 @@
     }
   }
 }
-
 
 .footer__copy {
   padding-top: 27px;

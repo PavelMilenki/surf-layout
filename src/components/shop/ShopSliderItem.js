@@ -6,7 +6,7 @@ import wax from "../../images/wax.png";
 import bracelet from "../../images/bracelet.png";
 
 
-export const ShopSliderItem = ({changeActiveClass,active})=> {
+export const ShopSliderItem = ({changeActiveClass1, changeActiveClass2,changeActiveClass3, active1,active2,active3}) => {
 
     return (
         <div className={'shop__slider-item'}>
@@ -38,8 +38,8 @@ export const ShopSliderItem = ({changeActiveClass,active})=> {
                     <div className={'surfboard'}>
                         <img src={surfBoard} alt='surf-board'/>
                         <div className={'surfboard-box surfboard__position--1'}>
-                            <div className={`surfboard-box__circle ${active}`}
-                                 onClick={changeActiveClass}>
+                            <div className={`surfboard-box__circle ${active1}`}
+                                 onClick={changeActiveClass1}>
                                 <div className={'circle-row'}></div>
                                 <div className={'circle-row'}></div>
                             </div>
@@ -48,8 +48,8 @@ export const ShopSliderItem = ({changeActiveClass,active})=> {
                             </div>
                         </div>
                         <div className={'surfboard-box surfboard__position--2'}>
-                            <div className={`surfboard-box__circle ${active}`}
-                                 onClick={changeActiveClass}>
+                            <div className={`surfboard-box__circle ${active2}`}
+                                 onClick={changeActiveClass2}>
                                 <div className={'circle-row'}></div>
                                 <div className={'circle-row'}></div>
                             </div>
@@ -58,8 +58,8 @@ export const ShopSliderItem = ({changeActiveClass,active})=> {
                             </div>
                         </div>
                         <div className={'surfboard-box surfboard__position--3'}>
-                            <div className={`surfboard-box__circle ${active}`}
-                                 onClick={changeActiveClass}>
+                            <div className={`surfboard-box__circle ${active3}`}
+                                 onClick={changeActiveClass3}>
                                 <div className={'circle-row'}></div>
                                 <div className={'circle-row'}></div>
                             </div>
