@@ -1,13 +1,11 @@
-import React from "react";
-import '../../app.scss'
-import sliderBg from "../../images/sleep-slider-bg.png";
-import hammock from "../../images/hammock.png";
-import stars from "../../images/star.svg";
-import {InfoItem} from "./InfoItem";
+import React from 'react';
+import {InfoItem} from './InfoItem';
+import sliderBg from '../../images/sleep-slider-bg.png';
+import hammock from '../../images/hammock.png';
+import stars from '../../images/star.svg';
 
 
 export const SleepSlider = ({guests, nights, setNights, setGuests}) => {
-
     return (
         <div className={'holder__slider-item travel-slider'}>
             <div className={'holder-slider__head'}
@@ -36,7 +34,6 @@ export const SleepSlider = ({guests, nights, setNights, setGuests}) => {
                     </div>
                 </div>
             </div>
-
             <div className="holder-slider__info">
                 <InfoItem subTitle={'Resort'}
                           infoTitle={'Auberge'}
@@ -53,7 +50,7 @@ export const SleepSlider = ({guests, nights, setNights, setGuests}) => {
                           number={guests}
                           setNumber={setGuests}/>
                 <InfoItem subTitle={'Pricing'}
-                          infoTitle={`$ ${nights * 55 + (guests-1) * 25} USD`}
+                          infoTitle={`$ ${nights * 55 + (guests - 1) * 25} USD`}
                           supTitle={'Per Night'}/>
             </div>
             <div className={'holder-slider__btn'}>
@@ -62,6 +59,5 @@ export const SleepSlider = ({guests, nights, setNights, setGuests}) => {
                 </a>
             </div>
         </div>
-
     )
 };

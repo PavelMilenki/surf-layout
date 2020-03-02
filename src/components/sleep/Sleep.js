@@ -1,11 +1,11 @@
-import React, {useState} from "react";
-import '../../app.scss'
-import {Title} from "../assets/Title";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import {LeftArrow} from "../assets/LeftArrow";
-import {RightArrow} from "../assets/RightArrow";
-import {SleepSlider} from "./SleepSlider";
+import React, {useState} from 'react';
+import {LeftArrow} from '../assets/LeftArrow';
+import {RightArrow} from '../assets/RightArrow';
+import {SleepSlider} from './SleepSlider';
+import {Title} from '../assets/Title';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+
 
 export const Sleep = () => {
 
@@ -13,7 +13,6 @@ export const Sleep = () => {
     const [guests, setGuests] = useState(4);
 
     return (
-
         <section className={'holder sleep'}>
             <div className={'container'}>
                 <Title title={'sleep'}/>

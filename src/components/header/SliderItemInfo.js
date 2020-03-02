@@ -1,6 +1,6 @@
-import React from "react";
-import '../../app.scss'
-import arrowsRight from "../../images/arrows-right.svg";
+import React from 'react';
+
+import arrowsRight from '../../images/arrows-right.svg';
 
 
 export const SliderItemInfo = ({title}) => {

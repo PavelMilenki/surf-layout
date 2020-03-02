@@ -1,13 +1,11 @@
-import React from "react";
-import '../../app.scss'
-import arrowsRight from "../../images/arrows-right.svg";
-import surfIcon from "../../images/surf-icon.svg";
-import waterIcon from "../../images/water-icon.svg";
-import windIcon from "../../images/wind-icon.svg";
+import React from 'react';
+import arrowsRight from '../../images/arrows-right.svg';
+import surfIcon from '../../images/surf-icon.svg';
+import waterIcon from '../../images/water-icon.svg';
+import windIcon from '../../images/wind-icon.svg';
 
 
 export const SliderDot = ({classForDot}) => {
-
     return (
         <div className={`slider-dots ${classForDot}`}>
             <div className={'slider-dots__circle'}></div>

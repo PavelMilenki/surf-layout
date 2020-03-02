@@ -1,12 +1,12 @@
-import React, {useEffect, useRef, useState} from "react";
-import '../../app.scss'
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import {SliderDot} from "./SliderDot";
-import {LeftArrow} from "../assets/LeftArrow";
-import {RightArrow} from "../assets/RightArrow";
-import {Sliders} from "./Sliders";
-import {Title} from "../assets/Title";
+import React, {useEffect, useRef, useState} from 'react';
+import {SliderDot} from './SliderDot';
+import {LeftArrow} from '../assets/LeftArrow';
+import {RightArrow} from '../assets/RightArrow';
+import {Sliders} from './Sliders';
+import {Title} from '../assets/Title';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+
 
 
 export const Surf = () => {
@@ -34,7 +34,6 @@ export const Surf = () => {
         {id: 7, slider: 'slider3', title: 'Cloud Nine', location: 'Siargao', country: 'Philippines'},
         {id: 8, slider: 'slider4', title: 'Vieux Boucau', location: 'Hossegor', country: 'France'},
     ];
-
 
     return (
         <section className={'serf'}>

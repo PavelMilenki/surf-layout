@@ -1,11 +1,11 @@
-import React from "react";
-import '../../app.scss'
-import {Title} from "../assets/Title";
-import {TravelSlider} from "./TravelSlider";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import {LeftArrow} from "../assets/LeftArrow";
-import {RightArrow} from "../assets/RightArrow";
+import React from 'react';
+import {Title} from '../assets/Title';
+import {TravelSlider} from './TravelSlider';
+import {LeftArrow} from '../assets/LeftArrow';
+import {RightArrow} from '../assets/RightArrow';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+
 
 export const Travel = () => {
     return (

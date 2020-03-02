@@ -1,16 +1,14 @@
-@import "./index";
-
+@import './index';
 
 //HEADER
 .header {
   position: relative;
-  height: 1080px; //100vh
+  height: 100vh
 }
-
 
 .header__slider {
   &-item {
-    height: 1080px; //100vh
+    height: 100vh;
     background-image: url("./images/headerBackGround.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -142,6 +140,16 @@
     }
   }
 
+}
+
+.menu-btn {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  z-index: 20;
+display: none;
 }
 
 .header__search {
@@ -845,7 +853,6 @@
   display: block;
 }
 
-
 .surfboard-box__content {
   display: none;
   position: absolute;
@@ -893,4 +900,6 @@
   letter-spacing: 1.05px;
   opacity: 0.5;
 }
+
+@import 'media';
 

@@ -1,13 +1,13 @@
-import React from "react";
-import '../../app.scss'
-import stars from "../../images/star.svg";
-import surfBoard from "../../images/surf-board.png";
-import wax from "../../images/wax.png";
-import bracelet from "../../images/bracelet.png";
+import React from 'react';
+import stars from '../../images/star.svg';
+import surfBoard from '../../images/surf-board.png';
+import wax from '../../images/wax.png';
+import bracelet from '../../images/bracelet.png';
 
 
-export const ShopSliderItem = ({changeActiveClass1, changeActiveClass2,changeActiveClass3, active1,active2,active3}) => {
-
+export const ShopSliderItem = (
+    {changeActiveClass1, changeActiveClass2, changeActiveClass3, active1, active2, active3}
+) => {
     return (
         <div className={'shop__slider-item'}>
             <div className={'shop__slider-inner'}>

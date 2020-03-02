@@ -1,19 +1,19 @@
-import React, {useState} from "react";
-import '../../app.scss'
-import {Title} from "../assets/Title";
-import {ShopSliderItem} from "./ShopSliderItem";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import {LeftArrow} from "../assets/LeftArrow";
-import {RightArrow} from "../assets/RightArrow";
+import React, {useState} from 'react';
+import {Title} from '../assets/Title';
+import {ShopSliderItem} from './ShopSliderItem';
+import {LeftArrow} from '../assets/LeftArrow';
+import {RightArrow} from '../assets/RightArrow';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
 
 
 export const Shop = () => {
+
     const [active1, setActive1] = useState('');
     const [active2, setActive2] = useState('');
     const [active3, setActive3] = useState('');
 
-    const changeActiveClass1 = () => {
+     const changeActiveClass1 = () => {
         if (!active1) {
             setActive1('active1')
         }
@@ -40,7 +40,6 @@ export const Shop = () => {
         }
     };
 
-
     return (
         <section className={'shop'}>
             <Title title={'shop'}/>
@@ -53,6 +52,7 @@ export const Shop = () => {
                         slidesToScroll={1}
                         prevArrow={<LeftArrow/>}
                         nextArrow={<RightArrow/>}>
+
                     <ShopSliderItem changeActiveClass1={changeActiveClass1} active1={active1}
                                     changeActiveClass2={changeActiveClass2} active2={active2}
                                     changeActiveClass3={changeActiveClass3} active3={active3}/>
@@ -62,10 +62,9 @@ export const Shop = () => {
                     <ShopSliderItem changeActiveClass1={changeActiveClass1} active1={active1}
                                     changeActiveClass2={changeActiveClass2} active2={active2}
                                     changeActiveClass3={changeActiveClass3} active3={active3}/>
-                    <ShopSliderItem
-                        changeActiveClass1={changeActiveClass1} active1={active1}
-                        changeActiveClass2={changeActiveClass2} active2={active2}
-                        changeActiveClass3={changeActiveClass3} active3={active3}/>
+                    <ShopSliderItem changeActiveClass1={changeActiveClass1} active1={active1}
+                                    changeActiveClass2={changeActiveClass2} active2={active2}
+                                    changeActiveClass3={changeActiveClass3} active3={active3}/>
 
                 </Slider>
             </div>

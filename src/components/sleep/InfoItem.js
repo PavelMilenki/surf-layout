@@ -1,5 +1,4 @@
-import React from "react";
-import '../../app.scss'
+import React from 'react';
 import minus from '../../images/minus.svg'
 import plus from '../../images/plus.svg'
 
@@ -7,7 +6,6 @@ import plus from '../../images/plus.svg'
 export const InfoItem = (
     {subTitle, infoTitle, supTitle, infoTitleSecond, isNumber = false, number, setNumber}
 ) => {
-
     return (
         <>
             {isNumber
