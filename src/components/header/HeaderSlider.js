@@ -5,8 +5,9 @@ import {LeftArrow} from "../assets/LeftArrow";
 import {RightArrow} from "../assets/RightArrow";
 import {SliderItemInfo} from "./SliderItemInfo";
 import {Dot} from "./Dot";
+import Fade from "react-reveal/Fade";
 
-export const HeaderSlider = ()=> {
+export const HeaderSlider = () => {
 
 
     const [state, setState] = useState({nav1: null, nav2: null});
@@ -45,7 +46,7 @@ export const HeaderSlider = ()=> {
         {id: 2, number: '02', name: 'South Shore'},
         {id: 3, number: '03', name: 'West Shore '},
         {id: 4, number: '04', name: 'East Shore'}];
-    return(
+    return (
         <div className={'header__slider'}>
             <Slider dots={false}
                     fade={true}
@@ -75,11 +76,13 @@ export const HeaderSlider = ()=> {
                         ref={slider => (slider2.current = slider)}>
                     {dots.map((d) => {
                         return (
-                            <Dot
-                                key={d.id}
-                                id={d.id}
-                                number={d.number}
-                                name={d.name}/>)
+                            <Fade bottom duration={1500} delay={3000} key={d.id}>
+                                <Dot
+                                    key={d.id}
+                                    id={d.id}
+                                    number={d.number}
+                                    name={d.name}/>
+                            </Fade>)
                     })}
                 </Slider>
             </div>

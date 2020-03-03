@@ -5,6 +5,7 @@ import arrowsDown from '../../images/arrows-down.svg'
 import 'animate.css/animate.css'
 import {HeaderSlider} from "./HeaderSlider";
 import {Slider} from "react-burgers";
+import {Link} from "react-scroll";
 
 export const Header = () => {
     const [editMode, setEditMode] = useState(false);
@@ -24,7 +25,10 @@ export const Header = () => {
                 go surf
             </div>
             <div className={'header__arrows'}>
-                <a href="#" className={'animated fadeInDown infinite slow'}><img src={arrowsDown} alt='arrow'/></a>
+                <Link to="surf" spy={true} smooth={true} offset={0} duration={3000}
+                      className={'animated fadeInDown infinite slow link'}>
+                    <img src={arrowsDown} alt='arrow'/>
+                </Link>
             </div>
             <Map/>
             <div className={'menu-btn'}>

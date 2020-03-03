@@ -13,7 +13,7 @@ export const Sleep = () => {
     const [guests, setGuests] = useState(4);
 
     return (
-        <section className={'holder sleep'}>
+        <section className={'holder sleep'} id={'sleep'}>
             <div className={'container'}>
                 <Title title={'sleep'}/>
                 <div className={'holder__slider'}>

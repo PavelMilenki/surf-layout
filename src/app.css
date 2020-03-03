@@ -13,12 +13,23 @@ body {
   font-size: 16px;
   background-color: #171919;
   color: #FFFFFF;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  min-width: 320px;
+  overflow-x: hidden; }
 
 a {
   display: inline-block;
   text-decoration: none;
   color: #FFFFFF; }
+
+.link {
+  cursor: pointer; }
+  .link:hover {
+    transform: scale(1.1);
+    transition: .4s; }
+
+.linkTo {
+  cursor: pointer; }
 
 ul, li {
   list-style: none;
@@ -63,13 +74,15 @@ ul, li {
     right: 0;
     top: 50%; }
 
-.title span {
+.title div {
   display: inline-block;
   font-weight: 800;
   font-size: 200px;
   color: rgba(255, 255, 255, 0.02);
   position: relative;
   transform: translateX(-50px); }
+.title span {
+  display: inline-block; }
 .title h3 {
   position: absolute;
   top: 0;
@@ -145,6 +158,11 @@ ul, li {
   .star-list li + li {
     margin-left: -25px; }
 
+.slider-arrow:hover {
+  transform: scale(1.1);
+  transition: .4s;
+  opacity: 1; }
+
 .header {
   position: relative;
   height: 100vh; }
@@ -183,12 +201,21 @@ ul, li {
   line-height: 46px;
   margin-bottom: 20px; }
 
+.slider-item__info-link img:hover {
+  transform: scale(1.1);
+  transition: .4s;
+  opacity: .25; }
+
 .slider-arrows {
   position: absolute;
   top: 40px;
   right: 80px;
   cursor: pointer;
   z-index: 4; }
+  .slider-arrows:hover {
+    transform: scale(1.1);
+    transition: .4s;
+    opacity: .25; }
 
 .slider-arrows__left {
   right: 125px; }
@@ -222,7 +249,7 @@ ul, li {
 
 .header__aside {
   position: absolute;
-  height: 1080px;
+  height: 100vh;
   top: 0;
   left: 0;
   z-index: 5;
@@ -335,6 +362,10 @@ ul, li {
   .serf-slider .slider-arrows {
     top: -50px;
     opacity: 0.25; }
+    .serf-slider .slider-arrows:hover {
+      transform: scale(1.1);
+      transition: .4s;
+      opacity: 1; }
   .serf-slider .slick-slide:nth-child(4n+1) .serf-box {
     margin-top: 32px; }
   .serf-slider .slick-slide:nth-child(4n+3) .serf-box {
@@ -413,7 +444,8 @@ ul, li {
   .slider-map .slick-current .slider-dots__content {
     display: block;
     width: 285px;
-    padding: 28px 31px 0 32px; }
+    padding: 28px 31px 0 32px;
+    z-index: 1; }
 
 .slider-dots__content-row {
   display: flex;
@@ -550,6 +582,10 @@ ul, li {
   .holder .slider-arrows {
     top: 225px;
     opacity: 0.25; }
+    .holder .slider-arrows:hover {
+      transform: scale(1.1);
+      transition: .4s;
+      opacity: 1; }
 
 .holder-slider__head {
   background-position: top left;
@@ -646,6 +682,10 @@ ul, li {
   background-position: right center; }
   .shop .slider-arrows {
     opacity: .25; }
+    .shop .slider-arrows:hover {
+      transform: scale(1.1);
+      transition: .4s;
+      opacity: 1; }
 
 .shop__slider {
   padding-left: 132px; }

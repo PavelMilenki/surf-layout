@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Dot = ({number,name}) => {
+export const Dot = ({number, name}) => {
     return (
         <div className={'slider-dots__item'}>
             <div className={'dots-box'}>

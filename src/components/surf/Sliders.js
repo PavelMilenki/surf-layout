@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-scroll";
 
 
 export const Sliders = ({slider, title, location, country}) => {
@@ -11,9 +12,9 @@ export const Sliders = ({slider, title, location, country}) => {
                     <span> | </span>{country}
                 </div>
                 <div className={'sef-box__inner-btn'}>
-                    <a className={'btn'} href="#">
+                    <Link to={'/'} className={'btn linkTo'}>
                         view <span>surf</span>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

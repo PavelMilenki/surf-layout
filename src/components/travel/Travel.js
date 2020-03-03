@@ -9,7 +9,7 @@ import 'slick-carousel/slick/slick.css';
 
 export const Travel = () => {
     return (
-        <section className={'holder'}>
+        <section className={'holder'} id={'travel'}>
             <div className={'container'}>
                 <Title title={'travel'}/>
                 <div className={'holder__slider'}>

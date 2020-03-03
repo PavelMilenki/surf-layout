@@ -41,7 +41,7 @@ export const Shop = () => {
     };
 
     return (
-        <section className={'shop'}>
+        <section className={'shop'} id={'shop'}>
             <Title title={'shop'}/>
             <div className={'shop__slider'}>
                 <Slider dots={false}
