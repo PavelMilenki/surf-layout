@@ -8,7 +8,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 
 
-
 export const Surf = () => {
 
     const [state, setState] = useState({nav1: null, nav2: null});
@@ -35,6 +34,7 @@ export const Surf = () => {
         {id: 8, slider: 'slider4', title: 'Vieux Boucau', location: 'Hossegor', country: 'France'},
     ];
 
+
     return (
         <section className={'serf'}>
             <Title title={'surf'}/>
@@ -48,10 +48,37 @@ export const Surf = () => {
                 <Slider dots={false}
                         slidesToShow={8}
                         slidesToScroll={1}
+                        speed={1000}
                         arrows={false}
                         focusOnSelect={true}
                         asNavFor={nav2}
-                        ref={slider => (slider1.current = slider)}>
+                        ref={slider => (slider1.current = slider)}
+                        responsive={[
+                            {
+                                breakpoint: 1103,
+                                settings: {
+                                    slidesToShow: 3,
+                                }
+                            },
+                            {
+                                breakpoint: 900,
+                                settings: {
+                                    slidesToShow: 2,
+                                    centerMode:true
+                                }
+                            },
+                            {
+                                breakpoint: 720,
+                                settings: {
+                                    slidesToShow: 1,
+                                    centerMode:true
+                                }
+                            },
+                            {
+                                breakpoint: 100,
+                                settings: 'unslick'
+                            }
+                        ]}>
                     <SliderDot classForDot={'slider-dot1'}/>
                     <SliderDot classForDot={'slider-dot2'}/>
                     <SliderDot classForDot={'slider-dot3'}/>
@@ -65,13 +92,43 @@ export const Surf = () => {
             <div className={'serf-slider'}>
                 <Slider dots={false}
                         infinite={true}
-                        speed={1500}
+                        speed={1000}
                         slidesToShow={4}
                         slidesToScroll={1}
                         prevArrow={<LeftArrow/>}
                         nextArrow={<RightArrow/>}
                         asNavFor={nav1}
-                        ref={slider => (slider2.current = slider)}>
+                        ref={slider => (slider2.current = slider)}
+                        responsive={[
+                            {
+                                breakpoint: 1210,
+                                settings: {
+                                    slidesToShow: 3
+                                }
+
+                            },
+                            {
+                                breakpoint: 900,
+                                settings: {
+                                    slidesToShow: 2
+                                }
+
+                            },
+                            {
+                                breakpoint: 720,
+                                settings: {
+                                    slidesToShow: 1,
+                                    centerMode:true
+                                }
+                            },
+                            {
+                                breakpoint: 426,
+                                settings: {
+                                    slidesToShow: 1,
+                                    centerMode:false
+                                }
+                            }
+                        ]}>
                     {sliders.map((s) => {
                         return (
                             <Sliders

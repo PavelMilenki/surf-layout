@@ -6,17 +6,18 @@ import {Sleep} from "./components/sleep/Sleep";
 import {Shop} from "./components/shop/Shop";
 import {Footer} from "./components/footer/Footer";
 
+
 export const App = () => {
     return (
         <>
             <Header/>
             <main className={'container'}>
                 <Surf/>
-                {/*<Travel/>*/}
-                {/*<Sleep/>*/}
-                {/*<Shop/>*/}
+                <Travel/>
+                <Sleep/>
+                <Shop/>
             </main>
-            {/*<Footer/>*/}
+            <Footer/>
         </>
     );
 };
