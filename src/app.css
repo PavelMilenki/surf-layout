@@ -1123,6 +1123,9 @@ ul, li {
 
   .holder-slider__info-title {
     padding-left: 0; }
+    .holder-slider__info-title span {
+      right: auto;
+      top: 47px; }
 
   .holder-slider__descr {
     background-position: right -119px; }
