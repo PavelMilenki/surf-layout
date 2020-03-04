@@ -184,22 +184,22 @@ export const Surf = () => {
                             country={'France'}/>
                     </Fade>
                     <Sliders
-                        slider={'slider1'}
+                        slider={'slider5'}
                         title={'Malibu Beach'}
                         location={'California'}
                         country={'USA'}/>
                     <Sliders
-                        slider={'slider2'}
+                        slider={'slider6'}
                         title={'Airlie Beach'}
                         location={'Queensland'}
                         country={'Australia'}/>
                     <Sliders
-                        slider={'slider3'}
+                        slider={'slider7'}
                         title={'Cloud Nine'}
                         location={'Siargao'}
                         country={'Philippines'}/>
                     <Sliders
-                        slider={'slider4'}
+                        slider={'slider8'}
                         title={'Vieux Boucau'}
                         location={'Hossegor'}
                         country={'France'}/>

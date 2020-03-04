@@ -1,6 +1,6 @@
 import React from 'react';
 import stars from '../../images/star.svg';
-import surfBoard from '../../images/surf-board.png';
+
 import wax from '../../images/wax.png';
 import bracelet from '../../images/bracelet.png';
 import {Rotate, Zoom} from "react-reveal";
@@ -9,7 +9,7 @@ import {Link} from "react-scroll";
 
 
 export const ShopSliderItem = (
-    {changeActiveClass1, changeActiveClass2, changeActiveClass3, active1, active2, active3}
+    {changeActiveClass1, changeActiveClass2, changeActiveClass3, active1, active2, active3,surfBoard}
 ) => {
     return (
         <div className={'shop__slider-item'}>

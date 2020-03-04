@@ -6,9 +6,12 @@ import {RightArrow} from "../assets/RightArrow";
 import {SliderItemInfo} from "./SliderItemInfo";
 import {Dot} from "./Dot";
 import Fade from "react-reveal/Fade";
+import backGroundImageHeaderOne from '../../images/backGroundImageHeaderOne.jpg'
+import backGroundImageHeaderTwo from '../../images/backGroundImageHeaderTwo.jpg'
+import backGroundImageHeaderThree from '../../images/backGroundImageHeaderThree.jpg'
+import backGroundImageHeaderFour from '../../images/backGroundImageHeaderFour.jpg'
 
 export const HeaderSlider = () => {
-
 
     const [state, setState] = useState({nav1: null, nav2: null});
     const slider1 = useRef();
@@ -26,19 +29,23 @@ export const HeaderSlider = () => {
     const titles = [
         {
             id: 1,
-            title: 'North Shore'
+            title: 'North Shore',
+            backGroundImage:backGroundImageHeaderOne
         },
         {
             id: 2,
-            title: 'South Shore'
+            title: 'South Shore',
+            backGroundImage:backGroundImageHeaderTwo
         },
         {
             id: 3,
-            title: 'West Shore'
+            title: 'West Shore',
+            backGroundImage:backGroundImageHeaderThree
         },
         {
             id: 4,
-            title: 'East Shore'
+            title: 'East Shore',
+            backGroundImage:backGroundImageHeaderFour
         }];
 
     const dots = [
@@ -63,7 +70,8 @@ export const HeaderSlider = () => {
                         <SliderItemInfo
                             key={t.id}
                             id={t.id}
-                            title={t.title}/>)
+                            title={t.title}
+                            backGroundImage={t.backGroundImage}/>)
                 })}
             </Slider>
             <div className={'slider-dotshead'}>

@@ -10,7 +10,7 @@
 .header__slider {
   &-item {
     height: 100vh;
-    background-image: url("./images/headerBackGround.jpg");
+    //background-image: url("./images/headerBackGround.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -324,6 +324,21 @@
 
 .slider4 {
   background-image: url("./images/slide-4.jpg");
+}
+.slider5 {
+  background-image: url("./images/slide-5.jpg");
+}
+
+.slider6 {
+  background-image: url("./images/slide-6.jpg");
+}
+
+.slider7 {
+  background-image: url("./images/slide-7.jpg");
+}
+
+.slider8 {
+  background-image: url("./images/slide-8.jpg");
 }
 
 .serf-box__inner-title {

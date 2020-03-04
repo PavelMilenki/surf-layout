@@ -5,6 +5,14 @@ import {LeftArrow} from '../assets/LeftArrow';
 import {RightArrow} from '../assets/RightArrow';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
+import slider1 from "../../images/travel-slider-1.png";
+import slider2 from "../../images/travel-slider-2.png";
+import slider3 from "../../images/travel-slider-3.png";
+import slider4 from "../../images/travel-slider-4.png";
+import slider5 from "../../images/travel-slider-5.png";
+import slider6 from "../../images/travel-slider-6.png";
+import slider7 from "../../images/travel-slider-7.png";
+import slider8 from "../../images/travel-slider-8.png";
 
 
 export const Travel = () => {
@@ -21,14 +29,14 @@ export const Travel = () => {
                             slidesToScroll={1}
                             prevArrow={<LeftArrow/>}
                             nextArrow={<RightArrow/>}>
-                        <TravelSlider/>
-                        <TravelSlider/>
-                        <TravelSlider/>
-                        <TravelSlider/>
-                        <TravelSlider/>
-                        <TravelSlider/>
-                        <TravelSlider/>
-                        <TravelSlider/>
+                        <TravelSlider slider={slider1}/>
+                        <TravelSlider slider={slider2}/>
+                        <TravelSlider slider={slider3}/>
+                        <TravelSlider slider={slider4}/>
+                        <TravelSlider slider={slider5}/>
+                        <TravelSlider slider={slider6}/>
+                        <TravelSlider slider={slider7}/>
+                        <TravelSlider slider={slider8}/>
                     </Slider>
                 </div>
             </div>

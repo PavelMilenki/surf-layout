@@ -1,17 +1,16 @@
 import React from 'react';
 import {InfoItem} from './InfoItem';
-import sliderBg from '../../images/sleep-slider-bg.png';
 import hammock from '../../images/hammock.png';
 import stars from '../../images/star.svg';
 import Fade from "react-reveal/Fade";
 import {Zoom} from "react-reveal";
 import {Link} from "react-scroll";
 
-export const SleepSlider = ({guests, nights, setNights, setGuests}) => {
+export const SleepSlider = ({guests, nights, setNights, setGuests,slide}) => {
     return (
         <div className={'holder__slider-item travel-slider'}>
             <div className={'holder-slider__head'}
-                 style={{backgroundImage: `url(${sliderBg})`}}>
+                 style={{backgroundImage: `url(${slide})`}}>
                 <div className={'holder-slider__subtitle'}>
 
                     <div className={'subtitle'}>

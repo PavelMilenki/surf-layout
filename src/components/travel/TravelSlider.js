@@ -1,6 +1,5 @@
 import React from "react";
 import '../../app.scss'
-import sliderBg from "../../images/travel-slider-bg.png";
 import virginAir from "../../images/virgin.png";
 import aviaLogo from "../../images/avia-logo.svg";
 import {InfoItem} from "./InfoItem";
@@ -8,11 +7,11 @@ import Fade from "react-reveal/Fade";
 import {Link} from "react-scroll";
 
 
-export const TravelSlider = () => {
+export const TravelSlider = ({slider}) => {
     return (
         <div className={'holder__slider-item travel-slider'}>
             <div className={'holder-slider__head'}
-                 style={{backgroundImage: `url(${sliderBg})`}}>
+                 style={{backgroundImage: `url(${slider})`}}>
                 <div className={'holder-slider__subtitle'}>
                     <div className={'subtitle'}>
                         <Fade right duration={1500}>
