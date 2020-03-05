@@ -96,7 +96,6 @@ export const Sleep = () => {
                                      setNights={setNights}
                                      setGuests={setGuests}
                                      slide={slider8}/>
-
                     </Slider>
                 </div>
             </div>

@@ -9,7 +9,7 @@ import {Link} from "react-scroll";
 
 
 export const ShopSliderItem = (
-    {changeActiveClass1, changeActiveClass2, changeActiveClass3, active1, active2, active3, surfBoard, styleBoard,price}
+    {changeActiveClass1, changeActiveClass2, changeActiveClass3, active1, active2, active3, surfBoard, styleBoard, price}
 ) => {
     return (
         <div className={'shop__slider-item'}>
@@ -19,14 +19,14 @@ export const ShopSliderItem = (
                         <Fade left duration={1000} delay={1000}>
                             <div className={'headline-right'}>Style</div>
                         </Fade>
-                        <Fade left duration={1000} delay={2000}>
+                        <Fade left duration={1000} delay={1200}>
                             <div className={'descr__head descr__head-shop'}>
                                 {styleBoard}
                             </div>
                         </Fade>
                     </div>
                     <div className={'shop__slider-price'}>
-                        <Zoom bottom duration={2000} delay={900}>
+                        <Zoom bottom duration={2000} delay={600}>
                             <ul className={'shop__star-list star-list'}>
                                 <li><img src={stars} alt={'logo'}/></li>
                                 <li><img src={stars} alt={'logo'}/></li>
@@ -34,10 +34,11 @@ export const ShopSliderItem = (
                                 <li><img src={stars} alt={'logo'}/></li>
                                 <li><img src={stars} alt={'logo'}/></li>
                             </ul>
+
                         </Zoom>
-                        ${price}<sup>99</sup>
+                        {price}<sup>99</sup>
                     </div>
-                    <Fade left duration={1000} delay={2000}>
+                    <Fade left duration={1000} delay={1600}>
                         <div className={'shop__slider-btn'}>
                             <Link to={'/'} className={'btn linkTo'}>
                                 Drop<span>In</span>
@@ -46,7 +47,7 @@ export const ShopSliderItem = (
                     </Fade>
                 </div>
                 <div className={'shop__slider-content'}>
-                    <Rotate bottom right duration={1000} delay={1000}>
+                    <Rotate bottom right duration={1000} delay={800}>
                         <div className={'surfboard'}>
                             <img src={surfBoard} alt='surf-board'/>
                             <div className={'surfboard-box surfboard__position--1'}>
@@ -88,7 +89,7 @@ export const ShopSliderItem = (
                             Extras
                         </div>
                         <div className={'shop__extras-inner'}>
-                            <Fade bottom duration={1000} delay={1300}>
+                            <Fade bottom duration={1000} delay={1000}>
                                 <div className={'shop__extras-box'}>
                                     <div className={'shop__extras-img'}>
                                         <img src={wax} alt='wax'/>
@@ -97,7 +98,7 @@ export const ShopSliderItem = (
                                     <div className={'shop__extras-price'}>$24.99</div>
                                 </div>
                             </Fade>
-                            <Fade bottom duration={1000} delay={1600}>
+                            <Fade bottom duration={1000} delay={1200}>
                                 <div className={'shop__extras-box'}>
                                     <div className={'shop__extras-img'}>
                                         <img src={bracelet} alt="bracelet"/>

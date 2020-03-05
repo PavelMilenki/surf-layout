@@ -3,9 +3,9 @@ import arrowsRight from '../../images/arrows-right.svg';
 import Fade from "react-reveal/Fade";
 import {Link} from "react-scroll";
 
-export const SliderItemInfo = ({title,backGroundImage}) => {
+export const SliderItemInfo = ({title, backGroundImage}) => {
     return (
-        <div className={'header__slider-item slider-item'} style={{backgroundImage: `url(${ backGroundImage })`}}>
+        <div className={'header__slider-item slider-item'} style={{backgroundImage: `url(${backGroundImage})`}}>
             <div className={'slider-item__info'}>
                 <div className={'slider-item__info-supTitle headLine-left'}>Surf</div>
                 <Fade left duration={1000} delay={800}>

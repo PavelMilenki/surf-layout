@@ -17,7 +17,7 @@ export const TravelSlider = ({slider, country, town, beach,distance, hours, minu
                         <Fade right duration={1000}>
                             <div className={'headLine-left'}>Shore</div>
                         </Fade>
-                        <Fade right duration={1000} delay={800}>
+                        <Fade right duration={1000} delay={600}>
                             <div className={'subtitle__head'}>
                                 {beach} <span>|</span> {country}
                             </div>
@@ -25,7 +25,7 @@ export const TravelSlider = ({slider, country, town, beach,distance, hours, minu
                     </div>
                 </div>
             </div>
-            <Fade bottom duration={1000}>
+            <Fade right duration={1000} delay={600}>
                 <div className={'holder-slider__descr'}
                      style={{backgroundImage: `url(${virginAir})`}}>
                     <div className={'descr'}>

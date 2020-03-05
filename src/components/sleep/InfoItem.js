@@ -12,7 +12,7 @@ export const InfoItem = (
                 ? <div className="holder-slider__info-item">
                     <div className="holder-slider__info-subtitle">{subTitle}</div>
                     <div className="holder-slider__info-title">
-                        {number}&#160;{infoTitle}<br/>{infoTitleSecond}
+                        {number}&#160;{infoTitle}{infoTitleSecond}
                         <div className={'holder-slider__info-btn'}>
                             <button onClick={() => {
                                 setNumber(number - 1)

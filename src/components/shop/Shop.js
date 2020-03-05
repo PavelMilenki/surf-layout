@@ -87,7 +87,6 @@ export const Shop = () => {
                                     surfBoard={surfBoard5}
                                     styleBoard={'North Spike TT Surfboard'}
                                     price={1899}/>
-
                 </Slider>
             </div>
         </section>

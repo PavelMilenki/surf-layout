@@ -16,7 +16,7 @@ export const SleepSlider = ({country, town, guests, nights, price, setNights, se
                         <Fade right duration={1000}>
                             <div className={'headLine-left'}>Resorts</div>
                         </Fade>
-                        <Fade right duration={1000} delay={800}>
+                        <Fade right duration={1000} delay={600}>
                             <div className={'subtitle__head'}>
                                 {town} <span>|</span> {country}
                             </div>
@@ -25,7 +25,7 @@ export const SleepSlider = ({country, town, guests, nights, price, setNights, se
 
                 </div>
             </div>
-            <Fade bottom duration={1000}>
+            <Fade right duration={1000} delay={600}>
                 <div className={'holder-slider__descr'}
                      style={{backgroundImage: `url(${hammock})`}}>
                     <div className={'descr'}>
@@ -60,7 +60,6 @@ export const SleepSlider = ({country, town, guests, nights, price, setNights, se
                 <Fade bottom duration={1000} delay={900}>
                     <InfoItem subTitle={'# of Guests'}
                               infoTitle={'Guests'}
-                              infoTitleSecond={''}
                               isNumber={true}
                               number={guests}
                               setNumber={setGuests}/>
