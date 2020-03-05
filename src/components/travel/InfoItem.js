@@ -1,6 +1,4 @@
 import React from "react";
-import '../../app.scss'
-
 
 export const InfoItem = ({subTitle,infoTitle,supTitle,infoTitleSecond})=> {
     return(

@@ -11,7 +11,7 @@ import {Link} from "react-scroll";
 
 export const Aside = ({editMode}) => {
     return (
-        <Fade left duration={1500} delay={3500}>
+        <Fade left duration={1000} delay={1600}>
             <div className={'header__aside'}>
                 <div className={'logo linkTo'}>
                     <Link to={'/'}>
@@ -19,7 +19,7 @@ export const Aside = ({editMode}) => {
                     </Link>
                 </div>
                 {editMode &&
-                <Fade left duration={1500}>
+                <Fade left duration={1000}>
                     <nav className={'menu'}>
                         <ul className={'menu__list'}>
                             <li>

@@ -30,22 +30,22 @@ export const HeaderSlider = () => {
         {
             id: 1,
             title: 'North Shore',
-            backGroundImage:backGroundImageHeaderOne
+            backGroundImage: backGroundImageHeaderOne
         },
         {
             id: 2,
             title: 'South Shore',
-            backGroundImage:backGroundImageHeaderTwo
+            backGroundImage: backGroundImageHeaderTwo
         },
         {
             id: 3,
             title: 'West Shore',
-            backGroundImage:backGroundImageHeaderThree
+            backGroundImage: backGroundImageHeaderThree
         },
         {
             id: 4,
             title: 'East Shore',
-            backGroundImage:backGroundImageHeaderFour
+            backGroundImage: backGroundImageHeaderFour
         }];
 
     const dots = [
@@ -58,7 +58,6 @@ export const HeaderSlider = () => {
             <Slider dots={false}
                     fade={true}
                     infinite={true}
-                    speed={1000}
                     slidesToShow={1}
                     slidesToScroll={1}
                     prevArrow={<LeftArrow/>}
@@ -84,7 +83,7 @@ export const HeaderSlider = () => {
                         ref={slider => (slider2.current = slider)}>
                     {dots.map((d) => {
                         return (
-                            <Fade bottom duration={1500} delay={3000} key={d.id}>
+                            <Fade bottom duration={1000} delay={1600} key={d.id}>
                                 <Dot
                                     key={d.id}
                                     id={d.id}

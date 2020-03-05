@@ -52,7 +52,6 @@ export const Shop = () => {
                 <Slider dots={false}
                         infinite={true}
                         fade={true}
-                        speed={1500}
                         slidesToShow={1}
                         slidesToScroll={1}
                         prevArrow={<LeftArrow/>}
@@ -61,23 +60,33 @@ export const Shop = () => {
                     <ShopSliderItem changeActiveClass1={changeActiveClass1} active1={active1}
                                     changeActiveClass2={changeActiveClass2} active2={active2}
                                     changeActiveClass3={changeActiveClass3} active3={active3}
-                                    surfBoard={surfBoard1}/>
+                                    surfBoard={surfBoard1}
+                                    styleBoard={'North Nugget TT Surfboard'}
+                                    price={799}/>
                     <ShopSliderItem changeActiveClass1={changeActiveClass1} active1={active1}
                                     changeActiveClass2={changeActiveClass2} active2={active2}
                                     changeActiveClass3={changeActiveClass3} active3={active3}
-                                    surfBoard={surfBoard2}/>
+                                    surfBoard={surfBoard2}
+                                    styleBoard={'North Pro CSC Surfboard'}
+                                    price={999}/>
                     <ShopSliderItem changeActiveClass1={changeActiveClass1} active1={active1}
                                     changeActiveClass2={changeActiveClass2} active2={active2}
                                     changeActiveClass3={changeActiveClass3} active3={active3}
-                                    surfBoard={surfBoard3}/>
+                                    surfBoard={surfBoard3}
+                                    styleBoard={'North Quest TT Surfboard'}
+                                    price={1399}/>
                     <ShopSliderItem changeActiveClass1={changeActiveClass1} active1={active1}
                                     changeActiveClass2={changeActiveClass2} active2={active2}
                                     changeActiveClass3={changeActiveClass3} active3={active3}
-                                    surfBoard={surfBoard4}/>
+                                    surfBoard={surfBoard4}
+                                    styleBoard={'North Whip CSC Surfboard'}
+                                    price={1599}/>
                     <ShopSliderItem changeActiveClass1={changeActiveClass1} active1={active1}
                                     changeActiveClass2={changeActiveClass2} active2={active2}
                                     changeActiveClass3={changeActiveClass3} active3={active3}
-                                    surfBoard={surfBoard5}/>
+                                    surfBoard={surfBoard5}
+                                    styleBoard={'North Spike TT Surfboard'}
+                                    price={1899}/>
 
                 </Slider>
             </div>

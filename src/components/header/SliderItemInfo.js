@@ -8,11 +8,11 @@ export const SliderItemInfo = ({title,backGroundImage}) => {
         <div className={'header__slider-item slider-item'} style={{backgroundImage: `url(${ backGroundImage })`}}>
             <div className={'slider-item__info'}>
                 <div className={'slider-item__info-supTitle headLine-left'}>Surf</div>
-                <Fade left duration={1500} delay={1000}>
+                <Fade left duration={1000} delay={800}>
                     <div className={'slider-item__info-title'}>{title}</div>
                 </Fade>
                 <div className={'slider-item__info-supText headLine-left'}>Condition</div>
-                <Fade right duration={1500} delay={2000}>
+                <Fade right duration={1000} delay={1200}>
                     <div className={'slider-item__info-text'}>Radical</div>
                 </Fade>
                 <Link to={'/'} className={'slider-item__info-link linkTo'}>

@@ -15,7 +15,6 @@ import slider7 from '../../images/sleep-slider-7.png';
 import slider8 from '../../images/sleep-slider-8.png';
 
 
-
 export const Sleep = () => {
 
     const [nights, setNights] = useState(5);
@@ -29,47 +28,70 @@ export const Sleep = () => {
                     <Slider dots={false}
                             infinite={true}
                             fade={true}
-                            speed={1500}
                             slidesToShow={1}
                             slidesToScroll={1}
                             prevArrow={<LeftArrow/>}
                             nextArrow={<RightArrow/>}>
-                        <SleepSlider nights={nights}
+                        <SleepSlider country={'USA'}
+                                     town={'Hawaii'}
+                                     price={40}
+                                     nights={nights}
                                      guests={guests}
                                      setNights={setNights}
                                      setGuests={setGuests}
                                      slide={slider1}/>
-                        <SleepSlider nights={nights}
+                        <SleepSlider country={'USA'}
+                                     town={'California'}
+                                     price={80}
+                                     nights={nights}
                                      guests={guests}
                                      setNights={setNights}
                                      setGuests={setGuests}
                                      slide={slider2}/>
-                        <SleepSlider nights={nights}
+                        <SleepSlider country={'Cuba'}
+                                     town={'Havana'}
+                                     price={25}
+                                     nights={nights}
                                      guests={guests}
                                      setNights={setNights}
                                      setGuests={setGuests}
                                      slide={slider3}/>
-                        <SleepSlider nights={nights}
+                        <SleepSlider country={'Brazil'}
+                                     town={'Rio de Janeiro'}
+                                     price={30}
+                                     nights={nights}
                                      guests={guests}
                                      setNights={setNights}
                                      setGuests={setGuests}
                                      slide={slider4}/>
-                        <SleepSlider nights={nights}
+                        <SleepSlider country={'France'}
+                                     town={'Hossegor'}
+                                     price={55}
+                                     nights={nights}
                                      guests={guests}
                                      setNights={setNights}
                                      setGuests={setGuests}
                                      slide={slider5}/>
-                        <SleepSlider nights={nights}
+                        <SleepSlider country={'South Africa'}
+                                     town={'Cape Town'}
+                                     price={45}
+                                     nights={nights}
                                      guests={guests}
                                      setNights={setNights}
                                      setGuests={setGuests}
                                      slide={slider6}/>
-                        <SleepSlider nights={nights}
+                        <SleepSlider country={'Philippines'}
+                                     town={'Siargao'}
+                                     price={30}
+                                     nights={nights}
                                      guests={guests}
                                      setNights={setNights}
                                      setGuests={setGuests}
                                      slide={slider7}/>
-                        <SleepSlider nights={nights}
+                        <SleepSlider country={'Australia'}
+                                     town={'Queensland'}
+                                     price={65}
+                                     nights={nights}
                                      guests={guests}
                                      setNights={setNights}
                                      setGuests={setGuests}

@@ -42,21 +42,21 @@ export const Surf = () => {
             <Title title={'surf'}/>
             <div className={'serf__subtitle'}>
                 <div className={'subtitle'}>
-                    <Fade right duration={1500}>
+                    <Fade right duration={1000}>
                         <div className={'headLine-left'}>Current location</div>
                     </Fade>
-                    <Fade right duration={1500} delay={1000}>
+                    <Fade right duration={1000} delay={800}>
                         <div className={'subtitle__head'}>California <span>|</span> USA</div>
                     </Fade>
 
                 </div>
             </div>
-            <Zoom bottom duration={2000} dalay={1000}>
+            <Zoom bottom duration={2000}>
                 <div className={'slider-map'}>
                     <Slider dots={false}
                             slidesToShow={8}
                             slidesToScroll={1}
-                            speed={1000}
+
                             arrows={false}
                             focusOnSelect={true}
                             asNavFor={nav2}
@@ -87,29 +87,69 @@ export const Surf = () => {
                                     settings: 'unslick'
                                 }
                             ]}>
-                        <Zoom bottom duration={2000} delay={1200}>
-                            <SliderDot classForDot={'slider-dot1'}/>
+                        <Zoom bottom duration={1000} delay={1200}>
+                            <SliderDot classForDot={'slider-dot1'}
+                                       title={'Hawaii'}
+                                       subTitle={'USA'}
+                                       surf={'9-13'}
+                                       tide={'+ 2.3'}
+                                       wind={'4 SE'}/>
                         </Zoom>
-                        <Zoom bottom duration={2000} delay={1400}>
-                            <SliderDot classForDot={'slider-dot2'}/>
+                        <Zoom bottom duration={1000} delay={1400}>
+                            <SliderDot classForDot={'slider-dot2'}
+                                       title={'California'}
+                                       subTitle={'USA'}
+                                       surf={'8-12'}
+                                       tide={'+ 2.4'}
+                                       wind={'3 SE'}/>
                         </Zoom>
-                        <Zoom bottom duration={2000} delay={1600}>
-                            <SliderDot classForDot={'slider-dot3'}/>
+                        <Zoom bottom duration={1000} delay={1600}>
+                            <SliderDot classForDot={'slider-dot3'}
+                                       title={'Havana'}
+                                       subTitle={'Cuba'}
+                                       surf={'10-14'}
+                                       tide={'+ 2.5'}
+                                       wind={'5 SE'}/>
                         </Zoom>
-                        <Zoom bottom duration={2000} delay={1800}>
-                            <SliderDot classForDot={'slider-dot4'}/>
+                        <Zoom bottom duration={1000} delay={1800}>
+                            <SliderDot classForDot={'slider-dot4'}
+                                       title={'Rio de Janeiro'}
+                                       subTitle={'Brazil'}
+                                       surf={'9-13'}
+                                       tide={'+ 2.2'}
+                                       wind={'4 SE'}/>
                         </Zoom>
-                        <Zoom bottom duration={2000} delay={2000}>
-                            <SliderDot classForDot={'slider-dot5'}/>
+                        <Zoom bottom duration={1000} delay={2000}>
+                            <SliderDot classForDot={'slider-dot5'}
+                                       title={'La Graviere'}
+                                       subTitle={'France'}
+                                       surf={'10-11'}
+                                       tide={'+ 2.1'}
+                                       wind={'6 SE'}/>
                         </Zoom>
-                        <Zoom bottom duration={2000} delay={2200}>
-                            <SliderDot classForDot={'slider-dot6'}/>
+                        <Zoom bottom duration={1000} delay={2200}>
+                            <SliderDot classForDot={'slider-dot6'}
+                                       title={'Cape Town'}
+                                       subTitle={'South Africa'}
+                                       surf={'8-12'}
+                                       tide={'+ 2.3'}
+                                       wind={'5 SE'}/>
                         </Zoom>
-                        <Zoom bottom duration={2000} delay={2400}>
-                            <SliderDot classForDot={'slider-dot7'}/>
+                        <Zoom bottom duration={1000} delay={2400}>
+                            <SliderDot classForDot={'slider-dot7'}
+                                       title={'Siargao'}
+                                       subTitle={'Philippines'}
+                                       surf={'9-13'}
+                                       tide={'+ 2.3'}
+                                       wind={'4 SE'}/>
                         </Zoom>
-                        <Zoom bottom duration={2000} delay={2600}>
-                            <SliderDot classForDot={'slider-dot8'}/>
+                        <Zoom bottom duration={1000} delay={2600}>
+                            <SliderDot classForDot={'slider-dot8'}
+                                       title={'Queensland'}
+                                       subTitle={'Australia'}
+                                       surf={'10-14'}
+                                       tide={'+ 2.5'}
+                                       wind={'6 SE'}/>
                         </Zoom>
 
                     </Slider>
@@ -118,9 +158,9 @@ export const Surf = () => {
             <div className={'serf-slider'}>
                 <Slider dots={false}
                         infinite={true}
-                        speed={1000}
                         slidesToShow={4}
                         slidesToScroll={1}
+                        focusOnSelect={true}
                         prevArrow={<LeftArrow/>}
                         nextArrow={<RightArrow/>}
                         asNavFor={nav1}
@@ -155,44 +195,44 @@ export const Surf = () => {
                                 }
                             }
                         ]}>
-                    <Fade bottom duration={1500} delay={300}>
+                    <Fade bottom duration={1000} delay={300}>
                         <Sliders
                             slider={'slider1'}
+                            title={'Oahu Beach'}
+                            location={'Hawaii'}
+                            country={'USA'}/>
+                    </Fade>
+                    <Fade bottom duration={1000} delay={600}>
+                        <Sliders
+                            slider={'slider2'}
                             title={'Malibu Beach'}
                             location={'California'}
                             country={'USA'}/>
                     </Fade>
-                    <Fade bottom duration={1500} delay={600}>
-                        <Sliders
-                            slider={'slider2'}
-                            title={'Airlie Beach'}
-                            location={'Queensland'}
-                            country={'Australia'}/>
-                    </Fade>
-                    <Fade bottom duration={1500} delay={900}>
+                    <Fade bottom duration={1000} delay={900}>
                         <Sliders
                             slider={'slider3'}
-                            title={'Cloud Nine'}
-                            location={'Siargao'}
-                            country={'Philippines'}/>
+                            title={'La Setenta'}
+                            location={'Havana'}
+                            country={'Cuba'}/>
                     </Fade>
-                    <Fade bottom duration={1500} delay={1200}>
+                    <Fade bottom duration={1000} delay={1200}>
                         <Sliders
                             slider={'slider4'}
-                            title={'Vieux Boucau'}
-                            location={'Hossegor'}
-                            country={'France'}/>
+                            title={'Barra da Tijuca'}
+                            location={'Rio de Janeiro'}
+                            country={'Brazil'}/>
                     </Fade>
                     <Sliders
                         slider={'slider5'}
-                        title={'Malibu Beach'}
-                        location={'California'}
-                        country={'USA'}/>
+                        title={'Vieux Boucau'}
+                        location={'Hossegor'}
+                        country={'France'}/>
                     <Sliders
                         slider={'slider6'}
-                        title={'Airlie Beach'}
-                        location={'Queensland'}
-                        country={'Australia'}/>
+                        title={'Durban'}
+                        location={'Cape Town'}
+                        country={'South Africa'}/>
                     <Sliders
                         slider={'slider7'}
                         title={'Cloud Nine'}
@@ -200,9 +240,9 @@ export const Surf = () => {
                         country={'Philippines'}/>
                     <Sliders
                         slider={'slider8'}
-                        title={'Vieux Boucau'}
-                        location={'Hossegor'}
-                        country={'France'}/>
+                        title={'Airlie Beach'}
+                        location={'Queensland'}
+                        country={'Australia'}/>
 
                     {/*{sliders.map((s) => {*/}
                     {/*    return (*/}

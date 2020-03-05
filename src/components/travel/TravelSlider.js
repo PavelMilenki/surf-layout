@@ -7,56 +7,56 @@ import Fade from "react-reveal/Fade";
 import {Link} from "react-scroll";
 
 
-export const TravelSlider = ({slider}) => {
+export const TravelSlider = ({slider, country, town, beach,distance, hours, minutes, price}) => {
     return (
         <div className={'holder__slider-item travel-slider'}>
             <div className={'holder-slider__head'}
                  style={{backgroundImage: `url(${slider})`}}>
                 <div className={'holder-slider__subtitle'}>
                     <div className={'subtitle'}>
-                        <Fade right duration={1500}>
+                        <Fade right duration={1000}>
                             <div className={'headLine-left'}>Shore</div>
                         </Fade>
-                        <Fade right duration={1500} delay={1000}>
+                        <Fade right duration={1000} delay={800}>
                             <div className={'subtitle__head'}>
-                                Airlie Beach <span>|</span> Australia
+                                {beach} <span>|</span> {country}
                             </div>
                         </Fade>
                     </div>
                 </div>
             </div>
-            <Fade bottom duration={1500}>
+            <Fade bottom duration={1000}>
                 <div className={'holder-slider__descr'}
                      style={{backgroundImage: `url(${virginAir})`}}>
                     <div className={'descr'}>
                         <div className="headline-right">Airline</div>
-                        <div className="descr__head">Virgin Australia
+                        <div className="descr__head">Virgin {country}
                             <img src={aviaLogo} alt={'logo'}/></div>
                     </div>
                 </div>
             </Fade>
             <div className="holder-slider__info">
-                <Fade bottom duration={1500} delay={300}>
+                <Fade bottom duration={1000} delay={300}>
                     <InfoItem subTitle={'Destination'}
-                              infoTitle={'Queensland'}
-                              infoTitleSecond={'Australia'}/>
+                              infoTitle={town}
+                              infoTitleSecond={country}/>
                 </Fade>
-                <Fade bottom duration={1500} delay={600}>
+                <Fade bottom duration={1000} delay={600}>
                     <InfoItem subTitle={'Distance'}
-                              infoTitle={'7,065 Miles'}/>
+                              infoTitle={distance}/>
                 </Fade>
-                <Fade bottom duration={1500} delay={900}>
+                <Fade bottom duration={1000} delay={900}>
                     <InfoItem subTitle={'Travel Time'}
-                              infoTitle={'23 Hours'}
-                              infoTitleSecond={'5 Minutes'}/>
+                              infoTitle={hours}
+                              infoTitleSecond={minutes}/>
                 </Fade>
-                <Fade bottom duration={1500} delay={1200}>
+                <Fade bottom duration={1000} delay={1200}>
                     <InfoItem subTitle={'Pricing'}
-                              infoTitle={'$1,976 USD'}
+                              infoTitle={price}
                               supTitle={'Round Trip'}/>
                 </Fade>
             </div>
-            <Fade bottom duration={1500} delay={1200}>
+            <Fade bottom duration={1000} delay={1200}>
                 <div className={'holder-slider__btn'}>
                     <Link to={'/'} className={'btn linkTo'}>
                         Book <span>Flight</span>

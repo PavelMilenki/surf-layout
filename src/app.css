@@ -1256,7 +1256,10 @@ ul, li {
     margin-left: -15px; }
 
   .holder-slider__descr .descr__head.descr__head-sleep {
-    padding-right: 0; } }
+    padding-right: 0; }
+
+  .holder-slider__descr .descr__head img {
+    display: none; } }
 @media (max-width: 374px) {
   .slider-map .slider-dots__content,
   .slider-map .slick-current .slider-dots__content {

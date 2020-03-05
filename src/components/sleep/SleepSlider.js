@@ -6,33 +6,32 @@ import Fade from "react-reveal/Fade";
 import {Zoom} from "react-reveal";
 import {Link} from "react-scroll";
 
-export const SleepSlider = ({guests, nights, setNights, setGuests,slide}) => {
+export const SleepSlider = ({country, town, guests, nights, price, setNights, setGuests, slide}) => {
     return (
         <div className={'holder__slider-item travel-slider'}>
             <div className={'holder-slider__head'}
                  style={{backgroundImage: `url(${slide})`}}>
                 <div className={'holder-slider__subtitle'}>
-
                     <div className={'subtitle'}>
-                        <Fade right duration={1500}>
+                        <Fade right duration={1000}>
                             <div className={'headLine-left'}>Resorts</div>
                         </Fade>
-                        <Fade right duration={1500} delay={1000}>
+                        <Fade right duration={1000} delay={800}>
                             <div className={'subtitle__head'}>
-                                Auberge <span>|</span> Australia
+                                {town} <span>|</span> {country}
                             </div>
                         </Fade>
                     </div>
 
                 </div>
             </div>
-            <Fade bottom duration={1500}>
+            <Fade bottom duration={1000}>
                 <div className={'holder-slider__descr'}
                      style={{backgroundImage: `url(${hammock})`}}>
                     <div className={'descr'}>
                         <div className={'headline-right'}>Rating</div>
                         <div className={'descr__head descr__head-sleep'}>Excellent
-                            <Zoom bottom duration={3000} delay={900}>
+                            <Zoom bottom duration={2000} delay={900}>
                                 <ul className={'holder__star-list star-list'}>
                                     <li><img src={stars} alt={'logo'}/></li>
                                     <li><img src={stars} alt={'logo'}/></li>
@@ -46,19 +45,19 @@ export const SleepSlider = ({guests, nights, setNights, setGuests,slide}) => {
                 </div>
             </Fade>
             <div className="holder-slider__info">
-                <Fade bottom duration={1500} delay={300}>
+                <Fade bottom duration={1000} delay={300}>
                     <InfoItem subTitle={'Resort'}
-                              infoTitle={'Auberge'}
-                              infoTitleSecond={'Australia'}/>
+                              infoTitle={town}
+                              infoTitleSecond={country}/>
                 </Fade>
-                <Fade bottom duration={1500} delay={600}>
+                <Fade bottom duration={1000} delay={600}>
                     <InfoItem subTitle={'# of Nights'}
                               infoTitle={'Nights'}
                               isNumber={true}
                               number={nights}
                               setNumber={setNights}/>
                 </Fade>
-                <Fade bottom duration={1500} delay={900}>
+                <Fade bottom duration={1000} delay={900}>
                     <InfoItem subTitle={'# of Guests'}
                               infoTitle={'Guests'}
                               infoTitleSecond={''}
@@ -66,18 +65,18 @@ export const SleepSlider = ({guests, nights, setNights, setGuests,slide}) => {
                               number={guests}
                               setNumber={setGuests}/>
                 </Fade>
-                <Fade bottom duration={1500} delay={1200}>
+                <Fade bottom duration={1000} delay={1200}>
                     <InfoItem subTitle={'Pricing'}
-                              infoTitle={`$ ${nights * 55 + (guests - 1) * 25} USD`}
+                              infoTitle={`$ ${nights * price + (guests - 1) * 25} USD`}
                               supTitle={'Per Night'}/>
                 </Fade>
             </div>
-            <Fade bottom duration={1500} delay={1200}>
-            <div className={'holder-slider__btn'}>
-                <Link className={'btn linkTo'} to={'/'}>
-                    Book <span>Stay</span>
-                </Link>
-            </div>
+            <Fade bottom duration={1000} delay={1200}>
+                <div className={'holder-slider__btn'}>
+                    <Link className={'btn linkTo'} to={'/'}>
+                        Book <span>Stay</span>
+                    </Link>
+                </div>
             </Fade>
         </div>
     )

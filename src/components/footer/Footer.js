@@ -5,7 +5,7 @@ import {Link} from "react-scroll";
 export const Footer = () => {
     return (
         <footer className={'footer'}>
-            <Fade bottom duration={1500} delay={1000}>
+            <Fade bottom duration={1000} delay={1000}>
                 <Link to={'/'} className={'btn linkTo'} >
                     go<span>Surf</span>
                 </Link>

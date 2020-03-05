@@ -9,24 +9,24 @@ import {Link} from "react-scroll";
 
 
 export const ShopSliderItem = (
-    {changeActiveClass1, changeActiveClass2, changeActiveClass3, active1, active2, active3,surfBoard}
+    {changeActiveClass1, changeActiveClass2, changeActiveClass3, active1, active2, active3, surfBoard, styleBoard,price}
 ) => {
     return (
         <div className={'shop__slider-item'}>
             <div className={'shop__slider-inner'}>
                 <div className={'shop__slider-info'}>
                     <div className={'descr'}>
-                        <Fade left duration={1500} delay={1000}>
+                        <Fade left duration={1000} delay={1000}>
                             <div className={'headline-right'}>Style</div>
                         </Fade>
-                        <Fade left duration={1500} delay={2000}>
+                        <Fade left duration={1000} delay={2000}>
                             <div className={'descr__head descr__head-shop'}>
-                                North Nugget TT Surfboard
+                                {styleBoard}
                             </div>
                         </Fade>
                     </div>
                     <div className={'shop__slider-price'}>
-                        <Zoom bottom duration={3000} delay={900}>
+                        <Zoom bottom duration={2000} delay={900}>
                             <ul className={'shop__star-list star-list'}>
                                 <li><img src={stars} alt={'logo'}/></li>
                                 <li><img src={stars} alt={'logo'}/></li>
@@ -35,9 +35,9 @@ export const ShopSliderItem = (
                                 <li><img src={stars} alt={'logo'}/></li>
                             </ul>
                         </Zoom>
-                        $799<sup>99</sup>
+                        ${price}<sup>99</sup>
                     </div>
-                    <Fade left duration={1500} delay={3000}>
+                    <Fade left duration={1000} delay={2000}>
                         <div className={'shop__slider-btn'}>
                             <Link to={'/'} className={'btn linkTo'}>
                                 Drop<span>In</span>
@@ -46,7 +46,7 @@ export const ShopSliderItem = (
                     </Fade>
                 </div>
                 <div className={'shop__slider-content'}>
-                    <Rotate bottom right duration={1500} delay={1000}>
+                    <Rotate bottom right duration={1000} delay={1000}>
                         <div className={'surfboard'}>
                             <img src={surfBoard} alt='surf-board'/>
                             <div className={'surfboard-box surfboard__position--1'}>
@@ -56,7 +56,7 @@ export const ShopSliderItem = (
                                     <div className={'circle-row'}></div>
                                 </div>
                                 <div className={'surfboard-box__content'}>
-                                    Double Concave with Vee Shape low point
+                                    Snappy top turns & bottom turns
                                 </div>
                             </div>
                             <div className={'surfboard-box surfboard__position--2'}>
@@ -66,7 +66,8 @@ export const ShopSliderItem = (
                                     <div className={'circle-row'}></div>
                                 </div>
                                 <div className={'surfboard-box__content'}>
-                                    Double Concave with Vee Shape low point
+                                    Best freestyle with no inserts
+
                                 </div>
                             </div>
                             <div className={'surfboard-box surfboard__position--3'}>
@@ -87,7 +88,7 @@ export const ShopSliderItem = (
                             Extras
                         </div>
                         <div className={'shop__extras-inner'}>
-                            <Fade bottom duration={1500} delay={1500}>
+                            <Fade bottom duration={1000} delay={1300}>
                                 <div className={'shop__extras-box'}>
                                     <div className={'shop__extras-img'}>
                                         <img src={wax} alt='wax'/>
@@ -96,7 +97,7 @@ export const ShopSliderItem = (
                                     <div className={'shop__extras-price'}>$24.99</div>
                                 </div>
                             </Fade>
-                            <Fade bottom duration={1500} delay={2000}>
+                            <Fade bottom duration={1000} delay={1600}>
                                 <div className={'shop__extras-box'}>
                                     <div className={'shop__extras-img'}>
                                         <img src={bracelet} alt="bracelet"/>
@@ -107,7 +108,6 @@ export const ShopSliderItem = (
                             </Fade>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
