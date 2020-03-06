@@ -647,6 +647,7 @@
   min-height: 200px;
   margin-bottom: 66px;
   position: relative;
+  width: 256px;
 }
 
 .holder-slider__info-subtitle {
@@ -680,14 +681,14 @@
     letter-spacing: 5.25px;
     opacity: 0.75;
     bottom: -8px;
-    right: 0;
+    right: 36px;
   }
 
 }
 
 .holder-slider__info-btn {
   position: absolute;
-  right: 0;
+  right: 46px;
   top: 30px;
 
   button {
